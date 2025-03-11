@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-poppins">
+    <!-- Background Wrapper -->
+    <div class="fixed inset-0 bg-black opacity-20"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-2xl font-bold text-white font-playfair no-underline">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-red-500 font-space no-underline">Home</a>
+                    <a href="#about" class="text-white hover:text-red-500 font-space no-underline">About</a>
+                    <a href="#skills" class="text-white hover:text-red-500 font-space no-underline">Skills</a>
+                    <a href="#projects" class="text-white hover:text-red-500 font-space no-underline">Projects</a>
+                    <a href="#contact" class="text-white hover:text-red-500 font-space no-underline">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl" data-aos="fade-right">
+                    <img src="profile.jpg" alt="Arjun Sunar" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left text-white" data-aos="fade-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 font-playfair text-green-800">Welcome to My Portfolio</h1>
+                    <p class="text-xl mb-8 font-space">I'm Arjun Sunar, a passionate developer creating amazing web experiences</p>
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300 font-space no-underline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 font-playfair text-green-800" data-aos="fade-up">IT's Me, Arjun </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4" data-aos="fade-right">
+                    <p class="text-gray-600 font-poppins">I have an experience of 2 years in web developer with expertise in creating modern and responsive websites. I love turning ideas into reality through code.</p>
+                    <p class="text-gray-600 font-poppins">My goal is to become a lead developer and mentor others in AI field. Feel free to connect with me on facebook or reach out via email at as3750141@gmail.com.</p>
+                </div>
+                <div class="relative flex justify-center" data-aos="fade-left">
+                    <div class="w-80 h-80 rounded-lg overflow-hidden shadow-xl border-4 border-white">
+                        <img src="profile.jpg" alt="Arjun Sunar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 font-playfair text-green-800" data-aos="fade-up">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="font-semibold font-space text-green-800">Frontend</h3>
+                    <p class="text-gray-600 font-poppins">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="font-semibold font-space text-green-800">Design</h3>
+                    <p class="text-gray-600 font-poppins">UI/UX, Figma</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="font-semibold font-space text-green-800">Backend</h3>
+                    <p class="text-gray-600 font-poppins">Node.js, Python</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="font-semibold font-space text-green-800">Mobile</h3>
+                    <p class="text-gray-600 font-poppins">React Native</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 font-playfair text-green-800" data-aos="fade-up">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="web development.jpg" alt="Project 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 font-space text-green-800">Project 1</h3>
+                        <p class="text-gray-600 font-poppins">Description of the project goes here.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">HTML</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">CSS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="Content writing.jpg" alt="Project 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 font-space text-green-800">Project 2</h3>
+                        <p class="text-gray-600 font-poppins">Description of the project goes here.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">React</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="vecteezy_ai-generated-designers-desk-graphic-design-resources_40724498.jpg" alt="Project 3" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl mb-2 font-space text-green-800">Project 3</h3>
+                        <p class="text-gray-600 font-poppins">Description of the project goes here.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">Python</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">Django</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-poppins">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 font-playfair text-green-800" data-aos="fade-up">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg">
+                <form action="process.php" method="POST" id="contactForm" class="space-y-4 md:space-y-6" data-aos="fade-up">
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-space text-sm md:text-base">Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-blue-500 font-poppins text-base">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-space text-sm md:text-base">Email</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-blue-500 font-poppins text-base">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2 font-space text-sm md:text-base">Message</label>
+                        <textarea name="message" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-blue-500 font-poppins text-base" rows="4"></textarea>
+                    </div>
+                    <div id="formMessage" class="hidden text-center py-2 rounded-lg"></div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 font-space text-base">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-poppins">&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html> 
